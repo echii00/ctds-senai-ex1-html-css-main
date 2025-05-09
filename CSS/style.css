@@ -1,0 +1,109 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: 0;
+}
+/* ----------------------------------------------------- */
+:root{
+
+    --blackground-body:white;
+    --blackground-hader: #1f2937;
+    --blackground-card:white;
+    --blackground-footer:#1f2937;
+    --color-body: #333;
+    --color-header:white;
+    --color-preco:#1f2937;
+    --color-fotter:white;
+}
+/* ----------------------------------------------------- */
+header h1{
+    font-size: 2rem;
+    
+
+
+}
+/* ----------------------------------------------------- */
+body{
+    font-family: 'poppins';
+    background-color:var(--blackground-body);
+    color:var(--color-body);
+}
+/* ----------------------------------------------------- */
+header{
+    background-color:var(--blackground-hader);
+    color:var(--color-header);
+    text-align: center;
+}
+/* ----------------------------------------------------- */
+ main{
+    padding: 20px;
+    max-width: 1200px;
+    margin: auto;
+
+ }
+/* ----------------------------------------------------- */
+.produtos{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content:center;
+
+} 
+/* ----------------------------------------------------- */
+.card{
+    background-color:var(--blackground-card);
+    font-size:  1.2rem;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    width: 300px;
+    padding: 15px;
+    display: flex;
+    flex-direction:column;
+    align-items:center;
+    transition: transform 0.2s ease-in-out;
+
+}
+/* ----------------------------------------------------- */
+.card:hover{
+    transform: scale(1.03);
+}
+/* ----------------------------------------------------- */
+.card h2{
+
+    font-size: .95rem
+}
+/* ----------------------------------------------------- */
+.card p{
+    font-size: 0.95rem;
+    padding: 5px;
+    text-align: center;
+}
+/* ----------------------------------------------------- */
+img{
+    width:300px;
+
+}
+/* ----------------------------------------------------- */
+footer{
+    background-color:#1f2937 ;
+    color:var(--color-fotter);
+    text-align: center;
+    margin-top: 40px;
+}
+/* ----------------------------------------------------- */
+.preco{
+    color:var(--color-preco) ;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+
+/* ----------------------------------------------------- */
+@media (max-width: 600px) {
+   .card {
+        width: 90%;
+    }
+
+   h1 {
+    font-size: 1.5rem;
+    }
+};
